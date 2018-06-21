@@ -10,10 +10,10 @@ export default class About extends React.Component<any, any> {
       <div className="About">
         <img src={logo} className="logo" height={128} />
         <p>
-          Draco is a system aimed at recommending visualizations.
+          Draco is a an extensible knowledge base of visualization design that cna be used to to find effective visualization designs.
         </p>
         <p>
-          Source code can be found <a href="https://github.com/domoritz/draco">on github</a>.
+          Learn more about Draco at <a href="https://uwdata.github.io/draco/">on github</a>.
         </p>
       </div>
     )
