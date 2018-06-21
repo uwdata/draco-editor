@@ -1,0 +1,9 @@
+.About {
+  width: 600px;
+  margin: 32px auto 32px auto; }
+  .About .logo {
+    display: block;
+    margin: auto;
+    padding: 16px 0 16px 0; }
+  .About p {
+    text-align: center; }

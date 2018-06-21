@@ -1,0 +1,10 @@
+@import 'base.scss';
+
+.VegaLiteChart {
+
+  .vega-actions a {
+    pointer-events: all;
+    font-size: .9em;
+    color: $light-grey;
+  }
+}

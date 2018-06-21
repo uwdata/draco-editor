@@ -1,0 +1,182 @@
+.Recommendations {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .Recommendations .Pane.vertical.Pane1 {
+    overflow: hidden; }
+  .Recommendations .Pane.vertical.Pane2 {
+    overflow: hidden; }
+  .Recommendations .visualizations {
+    position: relative;
+    height: calc(100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .Recommendations .visualizations .tabs {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 44px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row; }
+      .Recommendations .visualizations .tabs .tab {
+        flex-grow: 1;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .Recommendations .visualizations .tabs .tab.selected .text {
+          border-bottom: 2px solid #1A1C40; }
+        .Recommendations .visualizations .tabs .tab .text {
+          font-size: 14px;
+          padding: 4px 4px 4px 4px;
+          border-bottom: 2px solid transparent; }
+        .Recommendations .visualizations .tabs .tab:hover .text {
+          border-bottom: 2px solid #1A1C40; }
+    .Recommendations .visualizations .focus {
+      position: absolute;
+      top: 44px;
+      left: 0;
+      height: calc(100% - 196px - 44px);
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      margin: 0;
+      overflow: auto;
+      visibility: visible;
+      transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1); }
+      .Recommendations .visualizations .focus .chart {
+        padding: 24px 16px 16px 16px;
+        border-radius: 8px; }
+        .Recommendations .visualizations .focus .chart.update {
+          animation: bump 500ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+@keyframes bump {
+  0% {
+    background-color: #fff; }
+  50% {
+    background-color: #f5f4f9; }
+  100% {
+    background-color: #fff; } }
+        .Recommendations .visualizations .focus .chart .VegaLiteChart {
+          z-index: 0; }
+          .Recommendations .visualizations .focus .chart .VegaLiteChart .vega-actions-wrapper {
+            z-index: 0; }
+      .Recommendations .visualizations .focus.hidden {
+        transform: translateY(-100%);
+        visibility: hidden; }
+        .Recommendations .visualizations .focus.hidden .VegaLiteChart {
+          z-index: 0; }
+    .Recommendations .visualizations .context {
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      position: absolute;
+      z-index: 1;
+      height: 196px;
+      top: calc(100% - 196px);
+      background-color: #f5f4f9;
+      box-sizing: border-box;
+      transition: top 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1); }
+      .Recommendations .visualizations .context.full {
+        top: 44px;
+        height: calc(100% - 44px);
+        background-color: #fff;
+        overflow-y: auto; }
+        .Recommendations .visualizations .context.full .carousel {
+          flex-wrap: wrap;
+          width: 100%;
+          align-content: flex-start;
+          align-items: flex-start;
+          transition: flex-wrap 0ms, width 0ms; }
+          .Recommendations .visualizations .context.full .carousel .context-chart {
+            border-radius: 8px;
+            border: 1px solid transparent;
+            margin: 11px 15px 11px 15px;
+            padding: 12px 0 12px 0;
+            flex-grow: 0; }
+            .Recommendations .visualizations .context.full .carousel .context-chart.selected {
+              border: 1px solid #17266b; }
+              .Recommendations .visualizations .context.full .carousel .context-chart.selected:hover {
+                border: 1px solid #17266b; }
+            .Recommendations .visualizations .context.full .carousel .context-chart:hover {
+              border: 1px dashed #6d92e0;
+              background-color: #fff; }
+            .Recommendations .visualizations .context.full .carousel .context-chart .cost {
+              bottom: 8px; }
+      .Recommendations .visualizations .context .carousel {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        flex-wrap: nowrap;
+        transition: flex-wrap 500ms, width 500ms; }
+        .Recommendations .visualizations .context .carousel .context-chart {
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: calc(196px - 48px);
+          width: calc(196px - 48px);
+          justify-content: center;
+          padding: 24px 16px 24px 16px;
+          cursor: pointer;
+          flex-grow: 0;
+          flex-shrink: 0; }
+          .Recommendations .visualizations .context .carousel .context-chart.scroll {
+            flex-grow: 0; }
+          .Recommendations .visualizations .context .carousel .context-chart:hover {
+            background-color: #fafafc; }
+          .Recommendations .visualizations .context .carousel .context-chart.selected {
+            background-color: #fff; }
+          .Recommendations .visualizations .context .carousel .context-chart .VegaLiteChart {
+            padding: 0;
+            z-index: 2; }
+            .Recommendations .visualizations .context .carousel .context-chart .VegaLiteChart canvas {
+              width: auto !important;
+              max-width: 128px !important;
+              height: auto !important;
+              max-height: 128px !important; }
+          .Recommendations .visualizations .context .carousel .context-chart .cost {
+            position: absolute;
+            bottom: 18px;
+            font-size: 11px;
+            font-weight: 300;
+            font-family: 'Roboto Mono', monospace;
+            color: #a5a5a5; }
+  .Recommendations .info {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row; }
+    .Recommendations .info .expand-button {
+      height: 100%;
+      width: 24px;
+      display: flex;
+      cursor: pointer;
+      justify-content: center; }
+      .Recommendations .info .expand-button:hover {
+        background-color: #f7f7f7; }
+      .Recommendations .info .expand-button .expand-icon {
+        width: 16px;
+        height: 16px; }
+        .Recommendations .info .expand-button .expand-icon.collapse {
+          transform: rotate(180deg); }
+    .Recommendations .info .raw-container {
+      height: 100%;
+      width: 100%;
+      overflow: auto; }
+      .Recommendations .info .raw-container .raw {
+        padding: 16px 16px 0 0;
+        opacity: 0.9;
+        font-size: 0.8em; }
