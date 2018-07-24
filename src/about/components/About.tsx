@@ -13,7 +13,7 @@ export default class About extends React.Component<any, any> {
           Draco is a an extensible knowledge base of visualization design that you can use to find effective visualization designs.
         </p>
         <p>
-          Learn more about Draco at <a href="https://uwdata.github.io/draco/">on github</a>.
+          Learn more about Draco at <a href="https://uwdata.github.io/draco/">on GitHub</a>.
         </p>
       </div>
     )
