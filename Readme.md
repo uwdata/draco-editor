@@ -1,6 +1,6 @@
 # Draco Editor
 
-Run the editor in your browser at https://uwdata.github.io/draco-editor/. Learn more about Draco at https://github.com/uwdata/draco.
+Run the editor in your browser at https://uwdata.github.io/draco-editor/. Learn more about Draco at https://uwdata.github.io/draco/.
 
 Draco Editor uses https://github.com/uwdata/draco-vis
 
