@@ -3,7 +3,7 @@ import ReactJson from 'react-json-view';
 import { TopLevelSpec } from 'vega-lite';
 import SplitPane from 'react-split-pane';
 import VegaLiteChart from '../../shared/components/VegaLiteChart';
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 import AnimateOnChange from 'react-animate-on-change';
 
 import '../styles/Recommendations.css';

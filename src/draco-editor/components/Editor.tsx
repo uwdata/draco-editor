@@ -6,7 +6,7 @@ import { ASP_FORMAT, ASP_THEME}  from '../asp';
 import "../styles/Editor.css";
 import "../styles/Resizer.css";
 import Status from "./status";
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 import Recommendations, { VizView } from './Recommendations';
 
 import playIcon from '../../images/play.svg';
