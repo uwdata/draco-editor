@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MonacoWebpackPlugin = require("monaco-editor-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const { CheckerPlugin } = require("awesome-typescript-loader");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -15,7 +16,7 @@ module.exports = {
   module: {
     rules: [
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-      { test: /\.tsx?$/, use: "ts-loader" },
+      { test: /\.tsx?$/, use: "awesome-typescript-loader" },
       // css loading
       {
         test: /\.css$/,
@@ -43,6 +44,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: "./node_modules/wasm-clingo/clingo.wasm", to: "static/clingo.wasm" }
-    ])
+    ]),
+    new CheckerPlugin()
   ]
 };

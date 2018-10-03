@@ -17,5 +17,9 @@
   ],
   "include": [
     "typings/*.d.ts"
-  ]
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true,
+    "forceIsolatedModules": true
+  }
 }
