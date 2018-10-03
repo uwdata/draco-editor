@@ -1638,7 +1638,7 @@ chalk@^1.1.1, chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.4.1:
+chalk@^2.0.1, chalk@^2.1.0, chalk@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
   integrity sha512-ObN6h1v2fTJSmUXoS3nMQ92LbDK9be4TV+6G+omQlGJFdcUX5heKi1LZ1YnRMIgwTLEj3E24bT6tYni50rlCfQ==
@@ -2577,10 +2577,10 @@ domutils@1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
-draco-vis@^0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/draco-vis/-/draco-vis-0.0.11.tgz#a2057b6c758d66d0434cba56df2bdd8f9c422ca3"
-  integrity sha512-Kdf702TcIViWhpNbwoIePlTEUdbvntKR5KzkB5vAAuKdMHSuk9W3bCtnrSEXFuflLhrrdyipsOgwYvRE/UGNfQ==
+draco-vis@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/draco-vis/-/draco-vis-0.0.12.tgz#0312ecd6be6e74b45aa96ac08d80625eb436b5f0"
+  integrity sha512-/HDCpUVQDH3EUyomO+kO8Ziw+EJAdv1IDoWMW9A56fSDWtVwQgBY9fQ7MnMSSmVKnYYrSdvNG5uhzbrdgDLduw==
   dependencies:
     draco-vis "^0.0.9"
     vega-lite "^3.0.0-rc6"
@@ -5969,7 +5969,7 @@ selfsigned@^1.9.1:
   dependencies:
     node-forge "0.7.5"
 
-"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.3.0, semver@^5.5.0, semver@^5.5.1:
+"semver@2 || 3 || 4 || 5", semver@^5.3.0, semver@^5.5.0, semver@^5.5.1:
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.1.tgz#7dfdd8814bdb7cabc7be0fb1d734cfb66c940477"
   integrity sha512-PqpAxfrEhlSUWge8dwIp4tZnQ25DIOthpiaHNIthsjEFQD6EvqUKUDM7L8O2rShkFccYo1VjJR0coWfNkCubRw==
@@ -6637,17 +6637,6 @@ trim-right@^1.0.1:
   integrity sha512-m6s2OdQe5wgpFMC+pAJ+q9djG82O2jcHPOI6RNg1yy9rCYR+WD6Nbpl32fDpfC56nirdRy+opFa/Vk7HYhqaew==
   dependencies:
     glob "^7.1.2"
-
-ts-loader@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-5.2.1.tgz#e6815c631dcafc24319ce8be6f8af94908749cf3"
-  integrity sha512-KC0cOvsFVyxBlg5h9jvaMlIL2tNsyQLvT2/OvIlO0AMUBJ4iXTtOfaDEqvmqv2lM/icekQfDsP2PsYBCDHpuOQ==
-  dependencies:
-    chalk "^2.3.0"
-    enhanced-resolve "^4.0.0"
-    loader-utils "^1.0.2"
-    micromatch "^3.1.4"
-    semver "^5.0.1"
 
 tslib@^1.9.0, tslib@^1.9.2, tslib@^1.9.3:
   version "1.9.3"
