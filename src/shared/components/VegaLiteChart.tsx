@@ -5,9 +5,12 @@ import { TopLevelSpec } from 'vega-lite';
 
 import '../styles/VegaLiteChart.css';
 
+const cars = require('../../data/cars.json');
+const barley = require('../../data/barley.json')
+
 export const datasets = {
-  'data/cars.json': require('../../data/cars.json'),
-  'data/barley.json': require('../../data/barley.json')
+  'cars.json': cars,
+  'barley.json': barley
 };
 
 interface Props {
