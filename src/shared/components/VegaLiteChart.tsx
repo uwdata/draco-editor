@@ -57,13 +57,13 @@ export default class VegaLiteChart extends React.Component<Props, State> {
 
     const original_http = loader.http;
     loader.http = (url, options) => {
-      console.debug(url);
+      console.debug('Request for', url);
 
       if (url in datasets) {
         // @ts-ignore
         return datasets[url];
       }
-      return original_http(url, options);
+      return original_http.bind(loader)(url, options);
     };
 
     const element = this.refs.vis as HTMLElement;
